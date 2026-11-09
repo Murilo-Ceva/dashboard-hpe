@@ -2,7 +2,9 @@
 
 Painel CEVA de follow-up das notas fiscais da HPE Automotores, no padrão visual do Portal Transit Time.
 
-**Este repositório não guarda dados.** O site abre vazio. Clique em **Carregar base** e escolha o CSV ou o CSV.gz da aba "Base por NF Oficial". O arquivo é lido só no seu navegador; nada é enviado para a internet.
+O site abre com a **visão cliente** da base de 09/11/2026 (365 notas), sem transportadora, frete ou e-mail. Para ver outra base, clique em **Carregar base** e escolha o CSV ou o CSV.gz da aba "Base por NF Oficial"; esse arquivo é lido só no seu navegador.
+
+**Atenção:** este repositório é público. Os dados do `index.html` ficam visíveis para qualquer pessoa.
 
 ## O que o painel mostra
 
@@ -12,5 +14,5 @@ Painel CEVA de follow-up das notas fiscais da HPE Automotores, no padrão visual
 
 ## Regras
 
-- Não suba base, CSV, planilha nem e-mail para este repositório: ele é público.
-- O painel é gerado a partir do projeto `painel_hpe_v2` (template, `scripts/gerar_painel.py` e `scripts/verificar.py`), com a saída `saida/publico/index.html`.
+- Não suba base, CSV, planilha, e-mail nem a visão interna (transportadora e frete): o repositório é público.
+- O painel é gerado a partir do projeto `painel_hpe_v2` (template, `scripts/gerar_painel.py` e `scripts/verificar.py`). O `index.html` é a saída `saida/painel_cliente.html`; para o site sem dados, use `saida/publico/index.html`.
