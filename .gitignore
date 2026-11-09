@@ -1,0 +1,6 @@
+*.csv
+*.csv.gz
+*.gz
+*.xlsx
+*.xlsm
+dados/
